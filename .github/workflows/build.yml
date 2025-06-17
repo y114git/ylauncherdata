@@ -1,0 +1,46 @@
+name: Build YLAUNCHER
+
+on:
+  push:
+    branches: [ main, master ] # Запускается при отправке изменений в основную ветку
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest] # Матрица для сборки на macOS и Linux
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyinstaller customtkinter packaging psutil cryptography requests
+
+    - name: Build for macOS
+      if: matrix.os == 'macos-latest'
+      run: |
+        pyinstaller --noconfirm --onefile --windowed --icon "icon.icns" --name "YLAUNCHER" main.py
+        # Создаем архив с .app
+        zip -r YLAUNCHER-macOS.zip dist/YLAUNCHER.app
+
+    - name: Build for Linux
+      if: matrix.os == 'ubuntu-latest'
+      run: |
+        pyinstaller --noconfirm --onefile --name "YLAUNCHER" main.py
+        # Создаем архив с исполняемым файлом
+        zip YLAUNCHER-Linux.zip dist/YLAUNCHER
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: YLAUNCHER-${{ matrix.os }}
+        path: YLAUNCHER-*.zip # Загружает созданный архив
