@@ -1,8 +1,8 @@
 # Help, information and Quick links
 
-Modder's Rules and Guide: https://github.com/y114git/DELTAHUB/wiki/Modder's-Guide-(EN)
+GitHub: https://github.com/y114git/DELTAHUB/
 
-GitHub: [https://github.com/y114git/DELTAHUB/](https://github.com/y114git/DELTAHUB/)
+Modder's Rules and Guide: https://github.com/y114git/DELTAHUB/wiki/Modder's-Guide-(EN)
 
 ---
 
