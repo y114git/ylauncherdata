@@ -2,11 +2,7 @@
 
 Modder's Rules and Guide: https://github.com/y114git/DELTAHUB/wiki/Modder's-Guide-(EN)
 
----
-
-### **GitHub**
-
-The project is available on GitHub: [https://github.com/y114git/DELTAHUB/](https://github.com/y114git/DELTAHUB/)
+GitHub: [https://github.com/y114git/DELTAHUB/](https://github.com/y114git/DELTAHUB/)
 
 ---
 
