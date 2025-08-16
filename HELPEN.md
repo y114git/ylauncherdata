@@ -1,4 +1,4 @@
-# Help, information and Helpful links
+# Help, information and Quick links
 
 [Modder's Rules and Guide?](https://github.com/y114git/DELTAHUB/wiki/Modder's-Guide-(EN))
 
