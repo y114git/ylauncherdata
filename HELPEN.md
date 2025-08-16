@@ -1,6 +1,6 @@
 # Help, information and Quick links
 
-[Modder's Rules and Guide?](https://github.com/y114git/DELTAHUB/wiki/Modder's-Guide-(EN))
+Modder's Rules and Guide: https://github.com/y114git/DELTAHUB/wiki/Modder's-Guide-(EN)
 
 ---
 
