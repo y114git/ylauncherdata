@@ -1,8 +1,8 @@
 # Помощь, информация и полезные ссылки
 
-Правила и Руководство для мододелов: https://github.com/y114git/DELTAHUB/wiki/Modder's-Guide-(RU)
+GitHub: https://github.com/y114git/DELTAHUB/
 
-GitHub: [https://github.com/y114git/DELTAHUB/](https://github.com/y114git/DELTAHUB/)
+Правила и Руководство для мододелов: https://github.com/y114git/DELTAHUB/wiki/Modder's-Guide-(RU)
 
 ---
 
