@@ -1,4 +1,4 @@
-### Version 2.0.0 — 16.08.25
+### Version 2.0.0 Alpha — 16.08.25
 
 - **YLauncher is now DELTAHUB!** This is more than just a name change — the launcher has been rebranded and is now a full-fledged platform for not only translations, but for any mods. You now have a huge library with a convenient search function at your disposal.
 
