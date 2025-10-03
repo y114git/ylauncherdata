@@ -4,7 +4,6 @@
   - The "GameBanana URL" field has been replaced by "External URL," allowing links to any site (itch.io, ModDB, etc.). For better security, a new validation check blocks direct download links. The banana icon 🍌 has also been removed.
 
 - **Versioning for Lang files**
-
   - Language files now can have a version number. If you manually edit one of default lang files, you must also increase its version inside the file. Otherwise, the launcher will restore the original file to prevent issues. This does not affect custom/fan-made language files.
 
 ### Version 2.1.0 — 03.09.25
