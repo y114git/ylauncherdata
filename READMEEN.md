@@ -1,6 +1,6 @@
 ### Version 2.1.1 — 03.10.25
 
-- **GameBanana URL> External URL**
+- **GameBanana URL > External URL**
   - The "GameBanana URL" field has been replaced by "External URL," allowing links to any site (itch.io, ModDB, etc.). For better security, a new validation check blocks direct download links. The banana icon 🍌 has also been removed.
 
 - **Versioning for Lang files**
