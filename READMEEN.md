@@ -1,3 +1,17 @@
+### Version 2.1.2/3 — 13.10.25
+
+- **Library Filters!**
+
+  - Now you can filter mods not only on the main page but also in the library! In addition to the main tags, you can now also sort mods based on whether they are local or not.
+
+- **Save Collection Selection and Management**
+
+  - If you've created at least one save collection, you can now choose exactly which collection to play with when launching the game. After you finish playing, all your saved actions will be automatically saved back into the collection you selected.
+
+- **Linux Launch Fix**
+
+  - Now, if you are launching the game without Steam, the launcher will immediately attempt to start it using Wine. Please make sure you have it installed.
+
 ### Version 2.1.1 — 03.10.25
 
 - **GameBanana URL > External URL**
