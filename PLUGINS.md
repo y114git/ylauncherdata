@@ -31,7 +31,7 @@ Each plugin should be added in the following format:
 **Version:** X.X.X  
 **Author:** Author Name (optional)  
 **Description:** Brief description of the plugin's functionality  
-**Download Link:** [Direct link to archive](URL)   
+**Download:** [Direct link to archive](URL)   
 **Additional Information:** Any additional information (optional)## Plugin Requirements
 
 - The plugin must be functional and tested
@@ -42,12 +42,15 @@ Each plugin should be added in the following format:
 
 </details>
 
-## System Monitor
+## #1 System Monitor (ONLY FOR EXAMPLE)
 
 **Version:** 1.0.0  
 **Author:** DELTAHUB  
 **Description:** A plugin for monitoring system resources. Displays information about CPU, memory, and disk in a separate interface tab.  
-**Download Link:** [https://github.com/example/system-monitor/releases/download/v1.0.0/system-monitor.zip](https://github.com/example/system-monitor/releases/download/v1.0.0/system-monitor.zip)  
+**Download:** [https://github.com/example/system-monitor/releases/download/v1.0.0/system-monitor.zip](https://)  
+OR  
+**Download:** [deltahub://https://github.com/example/system-monitor/releases/download/v1.0.0/system-monitor.zip](https://)  
+
 **Additional Information:**  
 - Requires Python 3.8+.  
 - Compatible with DELTAHUB version 1.0.0 and above.
