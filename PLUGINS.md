@@ -2,6 +2,11 @@
 
 Welcome everyone! This file contains a list of all available plugins for the community.
 
+  - [#0 System Monitor (ONLY FOR EXAMPLE)](#0-system-monitor-only-for-example)
+  - [#1 XDELTA Patcher](#1-xdelta-patcher)
+  - [#2 Mod Editor](#2-mod-editor)
+  - [#3 DR Save Manager](#3-dr-save-manager)
+
 <details>
 
 <summary><h1>How to Add Your Plugin</h1></summary>
