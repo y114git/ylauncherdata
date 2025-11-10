@@ -87,9 +87,7 @@ Each plugin should be added in the following format:
 
 **Additional Information:**  
 
-- Requires Python 3.8+.  
-
-- Compatible with DELTAHUB version 1.0.0 and above.
+- Requires smart brain
 
 ## #1 XDELTA Patcher
 <details>
