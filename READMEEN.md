@@ -27,6 +27,10 @@
 
   - Now, if you're using Linux, you can enable an option to use PortProton instead of Wine.
 
+- **Spanish Language Support**
+
+  - Spanish language has been added to DELTAHUB! A huge thank you to the Spanish community for their support.
+
 - **Bug Fixes, Optimization, and Other Minor Changes**
 
   - In settings, you can now open the DELTAHUB folder with a single button, where mods, settings, plugins, and localization files are stored.
