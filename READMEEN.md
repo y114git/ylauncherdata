@@ -1,3 +1,38 @@
+### Version 2.2.0 — 11.11.25
+
+- **Complete Library Rework + Multi-Mod System**
+
+  - The library no longer has slots, now you simply click on a mod and use it. Thanks to the multi-mod system, you can select multiple mods at once. This works through step-by-step merging of mod files, but be warned: some mods may override each other. To avoid this, when selecting 2+ mods, you can configure priority for mods. Those with higher priority will be merged last, meaning if several mods affect the same point, the final change will come from the mod with the highest priority.
+  - Also, to avoid waiting a long time for mod merging, I recommend creating a modpack after selecting your mods. When launching a modpack, the game will start instantly with the selected mods and priority set during modpack creation. You can now also import (even via URL) or export mods (in both DELTAHUB and DELTAMOD formats).
+
+- **Search Page Rework + GameBanana Mod Support**
+
+  - Now on the mod search page, you can also install mods directly from GameBanana (and from other sources in the future). While you'll see all mods, if a mod wasn't created for the DELTAHUB format or at least DELTAMOD format, it won't be possible to install it automatically (though you can still view all the necessary information about it). You'll need to contact the author and ask them to add DELTAHUB support.
+  - You can now also choose the number of mods per page. The more you specify, the wider the search will be, but the load will also be higher.
+
+- **Undertale Yellow Support**
+
+  - Rejoice, Yellow fans! You can now launch Undertale Yellow in DELTAHUB, download mods for it, and if you haven't installed it before, you can use the full installation function to download it immediately (just like for DELTARUNEdemo). After installation, all paths will be automatically set, and you'll only need to launch the game.
+
+- **Plugin System + Migration of Save Manager, Mod Editor, and XDELTA Patcher to Plugin Format**
+
+  - For those who wanted to extend DELTAHUB's functionality, a convenient plugin system has been added, along with a Plugins page where you can configure plugins, enable/disable them, download and import them (even via URL). All details about this system are here: <https://github.com/y114git/DELTAHUB/wiki/Plugins-Guide.md>.
+  - Also, the built-in functions of Mod Management, XDELTA Patcher, and Save Manager are now separate plugins. The migration was made because not everyone needed these functions, and for some they were just clutter on the screen. Now you can choose and download what you need yourself.
+
+- **Built-in Chat**
+
+  - Instead of the button to go to the save manager at the bottom right, there's now a Chat button. The chat is completely anonymous, and you can switch between 5 different channels for your languages. In the future, this function might also become a plugin, and instead there will be a button that you can configure to do anything (for example, the same Chat, some tab, game launch, or a plugin).
+
+- **PortProton Support**
+
+  - Now, if you're using Linux, you can enable an option to use PortProton instead of Wine.
+
+- **Bug Fixes, Optimization, and Other Minor Changes**
+
+  - In settings, you can now open the DELTAHUB folder with a single button, where mods, settings, plugins, and localization files are stored.
+  - Everything that could be optimized has been maximally optimized, caching and asynchrony have been added everywhere possible. Using the program should now be much easier and more pleasant.
+  - This update can rightfully be called the biggest bug-fixing update. You may never know this, but during the development of this update, more than 47 bugs were fixed, from minor to truly major ones (for which a separate patch could have been released). Huge work was done, and I hope my efforts won't disappoint you!
+
 ### Version 2.1.2/3 — 13.10.25
 
 - **Library Filters!**
@@ -79,7 +114,7 @@
 
 ### Version 1.7.2 — 18.07.25
 
-* **A few bug fixes!**
+- **A few bug fixes!**
 
 - Now, each time you launch, it will not constantly ask you to re-select the game folder.
 - The online counter used to jump around like crazy, but now it shouldn't.
@@ -87,93 +122,99 @@
 
 ### Version 1.7.1 — 16.07.25
 
-* **Micro-update!**
+- **Micro-update!**
+
 - For some, the launcher did not start properly after the last patch, and for others, the launcher could freeze almost every 5 seconds. In this update, I tried to fix this.
 - Now, while the launcher is starting, you can look at a cool icon that appears in the center of the screen (Ahahahah).
 - Now, when exporting save slots, if they were completed, not only the main file is exported, but also the completion file associated with it.
 
 ### Version 1.7.0 — 15.07.25
 
-* **Full support for the Deltarune demo version!**
+- **Full support for the Deltarune demo version!**
+
 - Now you can launch and manage the demo version of the game directly from the launcher — without any extra hassle!
 - If you haven't installed the DEMO version yet, you can download it from scratch in the launcher thanks to the Full Installation feature!
 - Automatic search and installation of the demo version, including downloading the latest build directly from the interface.
 - Fully compatible with Steam.
 
-* **Improved translation manager:**
+- **Improved translation manager:**
+
 - New "Backup Server" feature — now, even if the main servers are unavailable, you can always download the translation you need.
 - Support for new archive formats: now the launcher works easily not only with ZIP, but also with RAR files.
 - Improved system for searching and downloading translations — faster, more convenient, more stable!
 
-* **Interface updates:**
+- **Interface updates:**
+
 - An online counter has been added, which displays the number of players who launched the game through the launcher.
 - The launcher's interface has become even more user-friendly, and compatibility with Linux and macOS has been improved.
 - Advanced dialogues for saving and managing translations.
 - Improved adaptability, new tips, and quick access to the necessary functions.
 
-* **Additional improvements and fixes:**
+- **Additional improvements and fixes:**
+
 - Optimized work with the Internet and temporary files, fixed rare errors when downloading translations.
 - Builds on MacOS are now immediately signed, and you do not need to constantly run them from the console.
 - Increased stability on all supported systems.
 - Improved support for custom executable files for advanced users.
 
 ### Version 1.6.0 - 12.07.25
+
 * New feature: Save Manager! Now you can manage your saves directly in the launcher.
 
-* How to open: Go to "Settings" and click the new "Saves✨" button.
+- How to open: Go to "Settings" and click the new "Saves✨" button.
 
-* Collections: Create separate "collections" of saves for each chapter. This is ideal for storing saves from different playthroughs (for example, "pacifist" and "genocide") and not getting confused.
+- Collections: Create separate "collections" of saves for each chapter. This is ideal for storing saves from different playthroughs (for example, "pacifist" and "genocide") and not getting confused.
 
-* Backup: Easily copy saves from the main slots to any collection and back. You can copy one selected slot or all three at once.
+- Backup: Easily copy saves from the main slots to any collection and back. You can copy one selected slot or all three at once.
 
-* Direct editing: For advanced users! Just double-click on an occupied slot to open a simple editor and manually change the values in the save file. Soon there will be a much more convenient and understandable editor!
+- Direct editing: For advanced users! Just double-click on an occupied slot to open a simple editor and manually change the values in the save file. Soon there will be a much more convenient and understandable editor!
 
 Interface and usability improvements:
 
-* The launcher window can now be stretched, and its size is saved after closing.
+- The launcher window can now be stretched, and its size is saved after closing.
 
-* Completely redesigned appearance: navigation through chapters is moved to the center, and the Telegram and Discord buttons are now always at hand on the main screen.
+- Completely redesigned appearance: navigation through chapters is moved to the center, and the Telegram and Discord buttons are now always at hand on the main screen.
 
-* The "Forced launch" checkbox has been removed. Now the launcher itself understands when to launch the game without changes.
+- The "Forced launch" checkbox has been removed. Now the launcher itself understands when to launch the game without changes.
 
-* Added support for animated .gif as a background.
+- Added support for animated .gif as a background.
 
 Other changes:
 
-* The auto-update logic has been slightly updated and minor bugs have been fixed.
+- The auto-update logic has been slightly updated and minor bugs have been fixed.
 
 ### Version 1.5.3 - 06.07.25
 
-* More extensive support for MacOS systems (Supports all architectures, but only if the version is above 11.0), visual bugs with local translations have been fixed.
+- More extensive support for MacOS systems (Supports all architectures, but only if the version is above 11.0), visual bugs with local translations have been fixed.
 
 ### Version 1.5.2 - 05.06.25
 
-* Minor fixes and bug fixes, especially with the fact that translations were not shown on the first installation.
+- Minor fixes and bug fixes, especially with the fact that translations were not shown on the first installation.
 
 ### Version 1.5.1 - 30.06.25
 
-* For those who received an error about a lack of access rights to the game folder, the launcher now tries to fix this automatically, and if it fails, it displays a message asking you to run as an administrator or manually change the folder rights.
+- For those who received an error about a lack of access rights to the game folder, the launcher now tries to fix this automatically, and if it fails, it displays a message asking you to run as an administrator or manually change the folder rights.
 
 ### Version 1.5.0 - 28.06.25
 
-* **2 New features: Direct launch and Your own translation!** By enabling direct launch, when you launch the game through the launcher, selecting the desired chapter (Chapter tab), the game will start immediately from that chapter, without the need to first select the chapter separately in the main menu of the game. Due to technical problems, it only works on Windows/Linux, and is also not compatible with launching through Steam.
-* **The second feature is Your own translation**, now you can add your own translation/mod/changes for each chapter separately, your added translation is saved in the list and you can select several custom translations and switch between them, if you are too lazy to add a translation for each chapter, you can take an archive that contains everything you need, and also in the folders with chapters, and just add the translation specifically through the Main menu of the game tab (Since everything there works on the root folder). You can give any name to your translation separately, and the most interesting thing is that you can add your own translation directly from a URL without the need to download anything separately.
-* Now the No Changes option is grayer, local translations (Which you added) are always yellow and at the top of the list, and the main translations are white if they have not yet been downloaded, green if they have been downloaded and do not need to be updated, and orange if they have been downloaded but need to be updated.
-* A little more compatibility with MacOS has been added, and problems with a lack of rights for some users have been fixed.
-* Several critical bugs that could lead to the launcher freezing or incorrect operation have been fixed.
-* All new features are fully compatible with each other, including Shortcuts.
+- **2 New features: Direct launch and Your own translation!** By enabling direct launch, when you launch the game through the launcher, selecting the desired chapter (Chapter tab), the game will start immediately from that chapter, without the need to first select the chapter separately in the main menu of the game. Due to technical problems, it only works on Windows/Linux, and is also not compatible with launching through Steam.
+- **The second feature is Your own translation**, now you can add your own translation/mod/changes for each chapter separately, your added translation is saved in the list and you can select several custom translations and switch between them, if you are too lazy to add a translation for each chapter, you can take an archive that contains everything you need, and also in the folders with chapters, and just add the translation specifically through the Main menu of the game tab (Since everything there works on the root folder). You can give any name to your translation separately, and the most interesting thing is that you can add your own translation directly from a URL without the need to download anything separately.
+- Now the No Changes option is grayer, local translations (Which you added) are always yellow and at the top of the list, and the main translations are white if they have not yet been downloaded, green if they have been downloaded and do not need to be updated, and orange if they have been downloaded but need to be updated.
+- A little more compatibility with MacOS has been added, and problems with a lack of rights for some users have been fixed.
+- Several critical bugs that could lead to the launcher freezing or incorrect operation have been fixed.
+- All new features are fully compatible with each other, including Shortcuts.
 
 ### Version 1.4.2/1.4.3 - 23.06.25
 
-* The problem with the normal display of text in descriptions has been fixed.
-* Several more critical bugs have been fixed.
+- The problem with the normal display of text in descriptions has been fixed.
+- Several more critical bugs have been fixed.
 
 ### Version 1.4.0/1.4.1 - 23.06.25
 
-* **New feature: Shortcuts! (Hey!)** Now you can create a shortcut to launch with your settings. Just set everything up as you like, click "Shortcut", and the launcher will create a special launch file. When you click on it, the game will start with the selected translations and settings, and the launcher itself will not even appear on the screen.
-* The "Update" button has been replaced with "Shortcut". The list of translations is now updated automatically on launch. However, you can now perform a Check for Updates, right from the settings menu.
-* The launcher's core has been changed, which made it much more stable and pleasant.
-* Now by default the launcher has a new beautiful Deltarune theme, but in the settings you can still choose the Legacy Theme, which will return the old, good look of the launcher up to 1.4.0
-* "Change log" has been added.
-* A check and a warning have been added when selecting a chapter folder instead of a game folder.
-* 2 critical bugs have been fixed, one of which did complete nonsense when the data.win file was missing in the game folder.
+- **New feature: Shortcuts! (Hey!)** Now you can create a shortcut to launch with your settings. Just set everything up as you like, click "Shortcut", and the launcher will create a special launch file. When you click on it, the game will start with the selected translations and settings, and the launcher itself will not even appear on the screen.
+- The "Update" button has been replaced with "Shortcut". The list of translations is now updated automatically on launch. However, you can now perform a Check for Updates, right from the settings menu.
+- The launcher's core has been changed, which made it much more stable and pleasant.
+- Now by default the launcher has a new beautiful Deltarune theme, but in the settings you can still choose the Legacy Theme, which will return the old, good look of the launcher up to 1.4.0
+- "Change log" has been added.
+- A check and a warning have been added when selecting a chapter folder instead of a game folder.
+- 2 critical bugs have been fixed, one of which did complete nonsense when the data.win file was missing in the game folder.
