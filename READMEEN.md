@@ -1,3 +1,18 @@
+### Version 2.3.0 — 16.11.25
+
+- **Full Support for All Resource Types**
+
+  - When merging mods, in addition to code and textures, fonts, rooms, shaders, sounds, and tilesets are now also merged.
+
+- **Merge Conflict Warnings**
+
+  - When merging multiple mods, if conflicts are detected between them (when different mods modify the same resources), a special dialog will now be shown with information about the conflicts. You'll be able to see which mods conflict with each other, and optionally open detailed logs for a more detailed study of the problem.
+
+- **Fixes and Improvements**
+
+  - Fixed an issue with pagination on the mod search page; page navigation now works correctly.
+  - Improved cleanup of temporary files after mod merging, which should slightly speed up the launcher and free up more disk space.
+
 ### Version 2.2.0 — 11.11.25
 
 - **Complete Library Rework + Multi-Mod System**
