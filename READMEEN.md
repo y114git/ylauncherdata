@@ -1,3 +1,23 @@
+### Version 2.3.1 — 17.11.25
+
+- **Improved deltahub:// URL Support**
+
+  - The deltahub:// protocol handler has been significantly improved. Now it automatically detects the content type (mod, plugin, or theme) and installs it accordingly. You can now install mods, plugins, and themes directly via deltahub:// links without worrying about what type of content it is (Just make sure to follow the rules described in the Wiki).
+
+- **GameBanana File Selection Dialog**
+
+  - When installing a mod from GameBanana that has multiple compatible files, a new dialog will now appear allowing you to choose which file to install. You'll be able to see detailed information about each file, including version, size, format, security status, and description, helping you make the best choice for your needs.
+
+- **Better GameBanana Installation**
+
+  - Improved compatibility checking for GameBanana mods; you'll immediately see if a mod is compatible or not, even before clicking the install button.
+  - Better progress tracking during GameBanana mod installation, with real-time updates in the search interface.
+
+- **Fixes and Improvements**
+
+  - Improved search page loading logic for GameBanana mods, making pagination and mod discovery more efficient.
+  - Better handling of mod installation states and button updates throughout the interface.
+
 ### Version 2.3.0 — 16.11.25
 
 - **Full Support for All Resource Types**
