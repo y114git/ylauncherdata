@@ -1,3 +1,9 @@
+### Version 2.3.2 — 19.11.25
+
+- **Bugfixes and icons relative paths**
+
+  - Fixed some bugs and also, now you can either in mod_config.json write in icon relative path like modfolder/icon.png and DELTAHUB will use icon from this path.
+
 ### Version 2.3.1 — 17.11.25
 
 - **Improved deltahub:// URL Support**
