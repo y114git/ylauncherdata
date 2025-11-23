@@ -1,4 +1,4 @@
-# DELTAMOD (1.3.1) and DELTAHUB (2.3.2) Feature Comparison
+# DELTAMOD (1.3.1) and DELTAHUB (2.3.3) Feature Comparison
 <img width="425" height="500" alt="image" src="https://github.com/user-attachments/assets/058103fd-aa9f-42da-b600-3405ac5c7e4a" />
 <img width="575" height="1108" alt="image" src="https://github.com/user-attachments/assets/3a5473b3-9189-442f-8690-cad9b0664dc4" />
 
