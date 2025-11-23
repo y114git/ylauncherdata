@@ -1,3 +1,9 @@
+### Version 2.3.3 — 25.11.25
+
+- **Improved optimization and fixed some bugs**
+
+  - Improved launcher optimization, fixed some bugs.
+
 ### Version 2.3.2 — 19.11.25
 
 - **Bugfixes and icons relative paths**
