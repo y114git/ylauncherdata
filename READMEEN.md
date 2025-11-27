@@ -1,3 +1,10 @@
+### Version 2.3.4 — 27.11.25
+
+- **Mod search page optimization and bug fixes**
+
+  - Now you can only select one game on the mod search page, and mods are loaded for it, not for all games at once, which will noticeably speed up their loading and optimize many aspects. You can no longer select all mods at once, but it's not needed anyway.
+  - Fixed bugs with freezes when broken mods are present, cleaned up code from unnecessary clutter, and fixed many instances where the background flickered. Also fixed some artifacts and sped up mod loading.
+
 ### Version 2.3.3 — 25.11.25
 
 - **Improved optimization and fixed some bugs**
