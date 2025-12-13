@@ -15,11 +15,11 @@ To add your plugin to this list, follow these steps:
 
 1. **Prepare your plugin archive:**
 
-   - Ensure your plugin contains a `main.py` file in the root of the archive
+   - Ensure your plugin contains a `plugin_init.py` file in the root of the archive
 
    - The plugin should be packaged in a supported archive format (ZIP, 7Z, RAR, TAR.GZ, LZMA)
 
-   - The archive should extract to a folder containing `main.py` in its root
+   - The archive should extract to a folder containing `plugin_init.py` in its root
 
 2. **Upload the archive:**
 
@@ -71,7 +71,7 @@ Each plugin should be added in the following format:
 
 - The download link must be direct (should not require additional actions from the user)
 
-- The plugin must have a valid `main.py` file with required fields: `PLUGIN_NAME`, `VERSION`, `DESCRIPTION`
+- The plugin must have a valid `plugin_init.py` file with required fields: `PLUGIN_NAME`, `VERSION`, `DESCRIPTION`
 
 </details>
 
@@ -138,7 +138,7 @@ Each plugin should be added in the following format:
 <img src="https://i.imgur.com/4BBNuym.png" alt="IMG3" width="800">
 </details>
 
-**Version:** 1.0.0  
+**Version:** 1.0.1  
 
 **Author:** Y114  
 
