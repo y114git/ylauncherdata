@@ -1,3 +1,29 @@
+### Version 2.4.0 — 13.12.25
+
+- **Full Support for Pizza Tower and Pizza Oven**
+
+  - DELTAHUB now supports Pizza Tower! No differences from other games in the program, browse mods, download and explore them right in DH, and play with mods as if nothing happened!
+  - Also, since almost all mods for Pizza Tower are created for Pizza Oven, DELTAHUB also supports this format, so there should be no problems with it, but I want to note that unlike, for example, Deltamod, Pizza Oven uses a format without a config file, it simply iterates through files and determines where to place them itself. To avoid breaking the logic and not struggling with adaptation, I simply adapted this format, and now the application has 2 mod formats for Pizza Tower - pizzatower (standard for DELTAHUB, with a config file) and pizzaoven (uses Pizza Oven logic). Both fall under Pizza Tower and will work. If you discover any bugs, please report them through the new "Report a Bug" button.
+
+- **"Report a Bug" Button Instead of "Help and Info"**
+
+  - No more struggling with finding logs, trying to contact administration in a separate place, and so on. Now you simply click on the new "Report a Bug" button, fill out a maximally convenient form, and after sending, your report will be sent directly to me and will be fixed even faster!
+  - The "Help and Info" button was removed as unnecessary.
+
+- **Complete Merge System Rework and Fast Merge Function**
+
+  - Before this update, it turns out the merge system had so many bugs and logical problems that the number of successful merges was less than 1% (and besides code and sprites, other resources weren't even being merged)! However, 3 weeks of fixes and reworks have paid off. Now the merge system COMPLETELY and perfectly merges all selected mods without any problems! You won't even notice any difference. This applies to fonts, sounds, rooms, and so on. Of course, if several mods modify the same resource, then depending on priority, only one will make it into the game for now, but this is much better than before! Also, smart code merging will be released soon, which still needs some refinement, but thanks to it, the number of successful merges will increase even more!
+  - Also, to speed up the merge process, a fast merge function has been added, which allows the process to handle mods not one by one, but simultaneously, saving a lot of time, especially when selecting multiple mods.
+
+- **Huge Number of Bugfixes and Optimizations**
+
+  - Many bugs have been fixed, and YOU reported many of them to me! For which I am very grateful!
+  - The most annoying bug has been fixed, when at program startup, during mod loading, there was some strange flickering or rapid appearance of small windows. Now the problem is resolved.
+  - When you were browsing mods, you might have noticed that some mods move to previous pages. This was due to auto-sorting, which automatically sorted mods so they were in the right places. Now auto-sorting is disabled by default, you can enable it by clicking the checkbox to the right of the field for entering the maximum number of mods per page.
+  - Fixed the issue where when importing mods created on the DELTAHUB-MCE website, you would get an "Invalid mod format" error.
+  - Now the buttons for specifying the path to the game folder are located in the library, not in settings.
+  - Many more small and even larger optimizations have been made for the interface, process handling, and game, bugfixes, and so on, so in this update, the application should feel much more pleasant.
+
 ### Version 2.3.4 — 27.11.25
 
 - **Mod search page optimization and bug fixes**
