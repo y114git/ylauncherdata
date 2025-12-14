@@ -21,6 +21,7 @@
   - The most annoying bug has been fixed, when at program startup, during mod loading, there was some strange flickering or rapid appearance of small windows. Now the problem is resolved.
   - When you were browsing mods, you might have noticed that some mods move to previous pages. This was due to auto-sorting, which automatically sorted mods so they were in the right places. Now auto-sorting is disabled by default, you can enable it by clicking the checkbox to the right of the field for entering the maximum number of mods per page.
   - Fixed the issue where when importing mods created on the DELTAHUB-MCE website, you would get an "Invalid mod format" error.
+  - You can now create modpacks in xdelta format, instead of data.win/ios
   - Now the buttons for specifying the path to the game folder are located in the library, not in settings.
   - Many more small and even larger optimizations have been made for the interface, process handling, and game, bugfixes, and so on, so in this update, the application should feel much more pleasant.
 
