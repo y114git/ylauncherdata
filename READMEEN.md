@@ -1,3 +1,10 @@
+### Version 2.4.1 — 21.12.25
+
+- **New resource support and bug fixes**
+
+  - DELTAHUB now supports merging Extensions, Audio Groups, Paths, and Timelines.
+  - Bugs that caused crashes when deleting mods and importing mods have been fixed.
+
 ### Version 2.4.0 — 13.12.25
 
 - **Full Support for Pizza Tower and Pizza Oven**
