@@ -1,3 +1,10 @@
+### Version 2.4.2 — 1.1.26
+
+- **Small update with bugfixes**
+
+  - Lot of minor bugfixes and one major bugfix with merging and pizzaoven.
+  - Added support to Wip mods.
+
 ### Version 2.4.1 — 21.12.25
 
 - **New resource support and bug fixes**
