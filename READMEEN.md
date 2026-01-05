@@ -1,4 +1,10 @@
-### Version 2.4.2 — 1.1.26
+### Version 2.4.3 — 05.01.26
+
+- **Small update with bugfixes**
+
+  - Fixed search bug, autoupdating bug and splash screen stuck bug.
+
+### Version 2.4.2 — 01.01.26
 
 - **Small update with bugfixes**
 
