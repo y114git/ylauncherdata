@@ -117,7 +117,7 @@ Each plugin should be added in the following format:
 <img src="https://i.imgur.com/qaniYxr.png" alt="IMG3" width="800">
 </details>
 
-**Version:** 1.0.0  
+**Version:** 1.0.1  
 
 **Author:** Y114  
 
