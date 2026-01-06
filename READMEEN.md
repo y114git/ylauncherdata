@@ -1,3 +1,14 @@
+### Version 2.4.4 — 06.01.26
+
+- **Sugary Spire Support**
+
+  - DELTAHUB now supports the Pizza Tower fan game, Sugary Spire!
+
+- **Bug Fixes**
+
+  - Fixed a bug with local mod icons render in the library
+  - Some text has been slightly tweaked to make it easier to understand
+
 ### Version 2.4.3 — 05.01.26
 
 - **Small update with bugfixes**
