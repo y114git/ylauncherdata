@@ -1,3 +1,17 @@
+### Version 2.4.5 — 07.01.26
+
+- **Manual Install Functionality**
+
+  - DELTAHUB now supports downloading ANY mod, even if it's not in compatible format. New manual install feature will allow you to configure mod files so now you don't have to use deltapatcher all time or create mods in Mod Editor.
+
+- **Hide Mods without Files Feature**
+
+  - You can now enable this feature to hide every mod that you can't download (Because there is no download files), for example Wip mods.
+
+- **Custom exe Rework**
+
+  - Custom executable checkbox was removed and now there is unique button for each game, so you can choose any executable you want without problem! Also if you had problems with game folder validation, just use Custom exe feature, choose .exe in your game folder and there will be no more problems with it!
+
 ### Version 2.4.4 — 06.01.26
 
 - **Sugary Spire Support**
