@@ -1,3 +1,14 @@
+### Version 2.4.6 — 11.01.26
+
+- **Additional xdelta patches for Manual installation**
+
+  - If mod have more than 1 .xdelta patch, then you can now write path to file that you want patch with it.
+
+- **Optimization and Fixes**
+
+  - Optimized assets exporting, increasing merging speed.
+  - Fixed bugs with manual installation and etc.
+
 ### Version 2.4.5 — 07.01.26
 
 - **Manual Install Functionality**
