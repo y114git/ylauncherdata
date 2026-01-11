@@ -8,6 +8,8 @@
 
   - Optimized assets exporting, increasing merging speed.
   - Fixed bugs with manual installation and etc.
+  - Fixed bug with mod list flickering.
+  - Fixed crash when deleting mods or creating modpacks under certain circumstances.
 
 ### Version 2.4.5 — 07.01.26
 
