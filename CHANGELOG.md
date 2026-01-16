@@ -1,3 +1,26 @@
+### Version 2.4.7 — 16.01.26
+
+- **Major Mod Merge Improvements**
+
+  - Full support for creating NEW resources that don't exist in the base game. Previously, mods could only modify existing assets. Now mods can add completely new Sounds, Fonts, Paths, AudioGroups, Timelines, Extensions, Shaders, and Rooms.
+  - Fixed critical bug with font registration that caused game crashes when mods added new fonts.
+  - Fixed import order: all resource types (fonts, sounds, rooms, etc.) are now imported BEFORE GML code, ensuring the compiler correctly recognizes new resources.
+
+- **Custom Logo Support**
+
+  - You can now set a custom logo for DELTAHUB! Find the new option in the customization settings.
+
+- **Archive Extraction Fixes**
+
+  - Fixed .7z archive extraction that was failing due to incorrect argument handling.
+  - Improved .rar archive extraction reliability.
+
+- **Manual Installation Improvements**
+
+  - Fixed bug that prevented manual mod installation when there is no DATA file but Extra files are present.
+
+- Also, you can scroll chat horizontally (ye).
+
 ### Version 2.4.6 — 11.01.26
 
 - **Additional xdelta patches for Manual installation**
@@ -201,28 +224,28 @@
 ### Version 2.1.0 — 03.09.25
 
 - **Complete Localization System Remake + Chinese Language Support**
-  - Previously, you could only use the languages built into the launcher, and you had to restart the launcher to switch, plus there were a lot of bugs. However, the era of localization has now arrived! From now on, languages are stored in the `lang` folder, next to the `settings` and `mods` folders. In addition to the official languages (A huge thank you to the Chinese community for their support), you can now add your own fan translations or even make FUNNY translations (WHAT?!). What's more, you can now choose the font for the launcher yourself by simply editing the lang file. In the `font` field, specify the name of the font file, which must be in the same folder as the language file! All other details are [HERE](https://github.com/y114git/DELTAHUB/wiki/Localization-and-Lang-system-Guide).
+  - Previously, you could only use the languages built into the launcher, and you had to restart the launcher to switch, plus there were a lot of bugs. However, the era of localization has now arrived! From now on, languages are stored in the `lang` folder, next to the `settings` and `mods` folders. In addition to the official languages (A huge thank you to the Chinese community for their support), you can now add your own fan translations or even make FUNNY translations (WHAT?!). What's more, you can now choose the font for the launcher yourself by simply editing the lang file. In the `font` field, specify the name of the font file, which must be in the same folder as the language file! All other details are [HERE](https://github.com/y114git/DELTAHUB/wiki/Localization-and-Lang-system-Guide).
 
 - **Deltamod Compatibility + .LZMA and .TAR.GZ Support**
-  - In addition to supporting two new archive formats, you can now literally drop a mod created for the Deltamod format into the `mods` folder (regardless of whether it's an archive or a folder) and DELTAHUB will automatically convert it to the local mod format for DH! Downloading via links (`deltahub://`) is also fully supported, so mod developers won't have to worry either. More details [HERE](https://github.com/y114git/DELTAHUB/wiki/Deltamod-compatibility).
+  - In addition to supporting two new archive formats, you can now literally drop a mod created for the Deltamod format into the `mods` folder (regardless of whether it's an archive or a folder) and DELTAHUB will automatically convert it to the local mod format for DH! Downloading via links (`deltahub://`) is also fully supported, so mod developers won't have to worry either. More details [HERE](https://github.com/y114git/DELTAHUB/wiki/Deltamod-compatibility).
 
 - **Theme Manager**
-  - You can now **import and export** your launcher's appearance settings! A new button has appeared in the customization settings that allows you to save your colors, background image, music, and sounds into a single `.dhtheme` file and share it with friends.
+  - You can now **import and export** your launcher's appearance settings! A new button has appeared in the customization settings that allows you to save your colors, background image, music, and sounds into a single `.dhtheme` file and share it with friends.
 
 - **Beta Updates**
-  - An option has been added to the settings to receive **experimental beta versions** of the launcher. Turn it on if you want to be the first to try new features!
+  - An option has been added to the settings to receive **experimental beta versions** of the launcher. Turn it on if you want to be the first to try new features!
 
 - **Full Screen Mode**
-  - For full immersion, a checkbox has been added to the settings to launch the application in **full screen mode**.
+  - For full immersion, a checkbox has been added to the settings to launch the application in **full screen mode**.
 
 - **_icon for Local Mods**
-  - The issue with icon display for local mods has been fixed. Also, for a local mod to have an icon, an `_icon` file (`.png`, `.jpg`, etc.) must be in the mod's folder, next to `config.json`.
+  - The issue with icon display for local mods has been fixed. Also, for a local mod to have an icon, an `_icon` file (`.png`, `.jpg`, etc.) must be in the mod's folder, next to `config.json`.
 
 - **Against Piracy!**
-  - Now, when you try to disable Xdelta mode when creating or editing a mod, or when installing a mod that uses file replacement, you will receive a warning. You can only continue to use or create such a mod if you agree to the terms and take full responsibility.
+  - Now, when you try to disable Xdelta mode when creating or editing a mod, or when installing a mod that uses file replacement, you will receive a warning. You can only continue to use or create such a mod if you agree to the terms and take full responsibility.
 
 - **Offline Interface**
-  - Now you can create local mods even without an internet connection (this should have been the case before, but there was a small bug).
+  - Now you can create local mods even without an internet connection (this should have been the case before, but there was a small bug).
 
 - The code has been greatly cleaned up, and the launcher's performance has been slightly accelerated (if anyone cares).
 
@@ -231,21 +254,21 @@
 - **YLauncher is now DELTAHUB!** This is more than just a name change — the launcher has been rebranded and is now a full-fledged platform for not only translations, but for any mods. You now have a huge library with a convenient search function at your disposal.
 
 - **A completely new interface!** The launcher has received a fully redesigned look that is more modern and convenient. Finally!
-  - **Updated startup screen:** Now, when you launch the launcher, you are greeted not by just an icon, but by an animated splash screen. You can turn it off in the settings.
-  - **Built-in mod library:** All your installed mods are now in one place, where you can configure anything you want, such as whether to launch a mod immediately without any extra settings, or to set up mods for each chapter separately. Also, the DEMO VERSION checkbox has been moved from the settings to the library.
+  - **Updated startup screen:** Now, when you launch the launcher, you are greeted not by just an icon, but by an animated splash screen. You can turn it off in the settings.
+  - **Built-in mod library:** All your installed mods are now in one place, where you can configure anything you want, such as whether to launch a mod immediately without any extra settings, or to set up mods for each chapter separately. Also, the DEMO VERSION checkbox has been moved from the settings to the library.
 
 - **Complete mod management**
-  - Now you can create your own mods and publish them. You can update them yourself, customize them, and have full control over them.
-  - Now, if you need to update a file, you can update just one of the mod's components, and users will no longer need to reinstall the entire mod from scratch, as was the case before. It will be enough to simply update only the changed components.
-  - You can also add your own local mods and now, you can even edit them!
+  - Now you can create your own mods and publish them. You can update them yourself, customize them, and have full control over them.
+  - Now, if you need to update a file, you can update just one of the mod's components, and users will no longer need to reinstall the entire mod from scratch, as was the case before. It will be enough to simply update only the changed components.
+  - You can also add your own local mods and now, you can even edit them!
 
 - **Full launcher customization and other changes:**
-  - You can now customize the launcher to suit your preferences — ABSOLUTELY EVERYTHING! The background music, the splash screen sound, the background, the color of backgrounds, the color of text and other elements, and so on!
-  - The launcher now runs even faster. The basic initialization has been sped up many times over, and you can make the launcher start even faster by disabling the splash screen in the settings.
-  - The button to update the interface and mod information is now located to the right of the Settings button.
-  - The Erase button is gone; in its place, the save manager has been moved from the settings.
-  - Now, when you launch the game with a mod, the files are no longer mindlessly copied into the game folder. Instead, the original files are moved to a temporary folder while the game is running, and when the game ends, the mod files are deleted from the game folder, and the original files are returned to their place.
-  - Many other minor changes, which I advise you to check out for yourself :)
+  - You can now customize the launcher to suit your preferences — ABSOLUTELY EVERYTHING! The background music, the splash screen sound, the background, the color of backgrounds, the color of text and other elements, and so on!
+  - The launcher now runs even faster. The basic initialization has been sped up many times over, and you can make the launcher start even faster by disabling the splash screen in the settings.
+  - The button to update the interface and mod information is now located to the right of the Settings button.
+  - The Erase button is gone; in its place, the save manager has been moved from the settings.
+  - Now, when you launch the game with a mod, the files are no longer mindlessly copied into the game folder. Instead, the original files are moved to a temporary folder while the game is running, and when the game ends, the mod files are deleted from the game folder, and the original files are returned to their place.
+  - Many other minor changes, which I advise you to check out for yourself :)
 
 ### Version 1.7.4 — 23.07.25
 
