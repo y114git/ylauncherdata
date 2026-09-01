@@ -1,0 +1,31 @@
+name: Build macOS ARM64 xdelta
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: jmacd/xdelta
+          ref: v3.2.0
+
+      - name: Build standalone xdelta
+        working-directory: xdelta3
+        run: |
+          cmake -B build -DCMAKE_BUILD_TYPE=Release -DXD3_LZMA_FETCH=ON -DXD3_BUILD_TESTS=OFF
+          cmake --build build --config Release -j
+          ./build/xdelta3 test
+          cp build/xdelta3 ../xdelta
+          file ../xdelta
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: xdelta-macos-arm64
+          path: xdelta
+          if-no-files-found: error
