@@ -1,4 +1,4 @@
-name: Build macOS ARM64 xdelta
+name: Build ARM64 xdelta
 
 on:
   workflow_dispatch:
@@ -8,24 +8,70 @@ permissions:
 
 jobs:
   build:
-    runs-on: macos-15
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Linux arm64
+            runner: ubuntu-24.04-arm
+            artifact: xdelta-linux-arm64
+            binary: build/xdelta3
+            output: xdelta
+          - name: macOS arm64
+            runner: macos-26
+            artifact: xdelta-macos-arm64
+            binary: build/xdelta3
+            output: xdelta
+          - name: Windows arm64
+            runner: windows-11-arm
+            artifact: xdelta-windows-arm64
+            binary: build/Release/xdelta3.exe
+            output: xdelta.exe
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           repository: jmacd/xdelta
           ref: v3.2.0
 
-      - name: Build standalone xdelta
+      - name: Build and test xdelta
+        shell: pwsh
         working-directory: xdelta3
         run: |
           cmake -B build -DCMAKE_BUILD_TYPE=Release -DXD3_LZMA_FETCH=ON -DXD3_BUILD_TESTS=OFF
-          cmake --build build --config Release -j
-          ./build/xdelta3 test
-          cp build/xdelta3 ../xdelta
-          file ../xdelta
+          cmake --build build --config Release --parallel
+          $binary = Join-Path (Get-Location) '${{ matrix.binary }}'
+          & $binary test
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Copy-Item -LiteralPath $binary -Destination "../${{ matrix.output }}"
 
-      - uses: actions/upload-artifact@v4
+      - name: Verify ARM64 binary
+        shell: pwsh
+        run: |
+          $binary = '${{ matrix.output }}'
+          if ($IsWindows) {
+            $bytes = [System.IO.File]::ReadAllBytes($binary)
+            $offset = [BitConverter]::ToInt32($bytes, 60)
+            $machine = [BitConverter]::ToUInt16($bytes, $offset + 4)
+            if ($machine -ne 43620) {
+              throw "Expected Windows ARM64 machine type 43620, got $machine."
+            }
+          } elseif ($IsMacOS) {
+            $architectures = & lipo -archs $binary
+            if ($LASTEXITCODE -ne 0 -or $architectures -notmatch '(^|\s)arm64(\s|$)') {
+              throw "Expected a macOS arm64 binary, got: $architectures"
+            }
+          } else {
+            $header = [System.IO.File]::ReadAllBytes($binary)
+            $machine = [BitConverter]::ToUInt16($header, 18)
+            if ($machine -ne 183) {
+              throw "Expected Linux ARM64 machine type 183, got $machine."
+            }
+          }
+
+      - uses: actions/upload-artifact@v7
         with:
-          name: xdelta-macos-arm64
-          path: xdelta
+          name: ${{ matrix.artifact }}
+          path: ${{ matrix.output }}
           if-no-files-found: error
